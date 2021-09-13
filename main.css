@@ -1,0 +1,438 @@
+.brand {
+  font-weight: bold;
+  font-size: 20px; 
+}
+
+.site-header {
+  position: relative;
+  margin: 2%;
+}
+
+.site-header__wrapper {
+  padding-top: 1rem;
+  padding-bottom: 1rem; 
+}
+  
+@media (min-width: 600px) {
+  .site-header__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 0;
+    padding-bottom: 0; 
+  } 
+}
+
+@media (min-width: 600px) {
+  .nav__wrapper {
+    display: flex; 
+  } 
+}
+
+@media (max-width: 599px) {
+  .nav__wrapper {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    left: 0;
+    z-index: -1;
+    background-color: #d9f0f7;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(-100%);
+    transition: transform 0.3s ease-out, opacity 0.3s ease-out; }
+    .nav__wrapper.active {
+      visibility: visible;
+      opacity: 1;
+      transform: translateY(0); } }
+
+.nav__item a {
+  display: block;
+  padding: 1.5rem 1rem; }
+
+.nav__toggle {
+  display: none; }
+  @media (max-width: 599px) {
+    .nav__toggle {
+      display: block;
+      position: absolute;
+      right: 1rem;
+      top: 1rem; } }
+
+
+      @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+.wrapper {
+max-width: 1140px;
+padding-left: 1rem;
+padding-right: 1rem;
+margin-left: auto;
+margin-right: auto;
+}
+
+*,
+*:before,
+*:after {
+box-sizing: border-box;
+}
+
+a {
+text-decoration: none;
+color: #222;
+}
+
+html {
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+
+body {
+font-family: "Roboto", sans-serif;
+}
+
+.sr-only {
+position: absolute;
+clip: rect(1px, 1px, 1px, 1px);
+padding: 0;
+border: 0;
+height: 1px;
+width: 1px;
+overflow: hidden;
+}
+
+.button {
+-webkit-appearance: none;
+   -moz-appearance: none;
+        appearance: none;
+color: #fff;
+background-color: #2fa0f6;
+min-width: 120px;
+padding: 0.5rem 1rem;
+border-radius: 5px;
+text-align: center;
+}
+
+.button svg {
+display: inline-block;
+vertical-align: middle;
+width: 24px;
+height: 24px;
+fill: #fff;
+}
+
+.button span {
+display: none;
+}
+
+@media (min-width: 600px) {
+.button span {
+  display: initial;
+}
+}
+
+.button--icon {
+  min-width: initial;
+  padding: 0.5rem;
+}
+
+.brand-name {
+  display: flex;
+  align-items: center;
+}
+
+.brand-name a {
+  padding-left: 1%;
+  color: #e9474b;
+}
+
+.bakled-polenta-italian-sausage {
+  margin-top: -40px;
+  height: 365px;
+  background-color: #e9474b;
+  color: #fff;
+}
+
+.bakled-polenta-italian-sausage img {
+  width: 70%;
+  height: 365px;
+  float: left;
+}
+
+.header-text {
+  margin-left: 73%;
+  padding-top: 30px;
+}
+
+.header-text h3 {
+  margin: 20px 0;
+  font-size: 34px;
+  font-weight: 800;
+}
+.header-text p {
+  margin: 30px 0;
+}
+
+.header-text button {
+  height: 43px;
+  margin-top: 15px;
+  width: 100px;
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+.item-content {
+  margin: 2%;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f8f9fa;
+}
+
+.container{
+    margin: 0 auto;
+    max-width: 1300px;
+    padding: 100px 20px;
+    padding-top: 200px;
+}
+
+.title{
+    margin-bottom: 70px;
+}
+
+.title h3{
+    position: relative;
+    font-size: 45px;
+    font-weight: 900;
+}
+
+.title h3 .bg{
+    position: absolute;
+    left: -6px;
+    top: 0px;
+    color: transparent;
+    font-size: 150px;
+    font-weight: 900;
+    opacity: .1;
+    line-height: 0;
+    -webkit-text-stroke: 1px #000;
+    -webkit-user-select: none;
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    
+}
+
+.card img{
+    height: 250px;
+    width: 100%;
+    object-fit: cover;
+}
+
+.card-body{
+    background-color: #fff;
+    padding: 20px;
+}
+
+.card-body .text-date{
+    font-size: 14px;
+    margin-bottom: 5px;
+    line-height: 1.7;
+}
+
+.line{
+    height: 1px;
+    width: 100%;
+    background-color: #fff;
+    margin-bottom: 20px;
+    margin: 20px 20px;
+}
+
+.card-body .text{
+    color: #000;
+    font-size: 26px;
+    margin: 5px 0;
+    font-weight: 100;
+}
+
+@media screen and (max-width: 900px) {
+    .cards{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    .container{
+        padding: 50px 20px;
+        padding-top: 80px;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .cards{
+        grid-template-columns: 1fr;
+    }
+
+    .container{
+        padding: 30px 20px;
+    }
+
+    .title{
+        margin-bottom: 30px;
+    }
+
+    .title h3 .bg{
+        display: none;
+    }
+}
+
+.heading-card {
+  display: flex;
+  justify-content: space-between;
+}
+
+.item-content {
+  margin: 4%;
+}
+
+.item-content h1 {
+  font-size: 33px;
+  font-weight: 600;
+  margin-bottom: 40px;
+}
+
+.invite {
+  padding: 4%;
+  background-color: #e9474b;
+  color: #fff;
+}
+
+.invite .form {
+  display: flex;
+  justify-content: space-around;
+}
+
+.invite .submit {
+  margin: 10px auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer {
+  display: flex;
+  margin: 4%;
+}
+
+.section {
+  width: 25%;
+  margin: 15px;
+}
+
+input {
+  height: 40px;
+  width: 200px;
+  outline: none;
+  border: none;
+  border-radius: 5px;
+}
+
+.label {
+  font-weight: 800;
+  font-size: 20px;
+  margin-bottom: 6px;
+}
+
+.invite button {
+  height: 43px;
+  margin-top: 23px;
+  width: 100px;
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+}
+
+.footer h2 {
+  font-size: 15px;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.footer p {
+  margin: 10px 0;
+}
+
+.searchbox input {
+  background: none;
+  font-size: 21px;
+}
+
+.searchbox {
+  float: right;
+  position: relative;
+}
+
+.filter-button {
+  font-size: 20px;
+  line-height: 46px;
+  width: 230px;
+  border: none;
+  background-color: #e9474b;
+  color: white;
+}
+
+.sort {
+  margin: 0 10px;
+  display: initial;
+}
+
+.sort select {
+  font-size: 20px;
+  line-height: 41px;
+  height: 40px;
+  border: 3px solid #000;
+  border-radius: 5px;
+  margin: 0 7px;
+}
+
+.filter-content {
+  background-color: #e9474b;
+  color: white;
+  font-size: 18px;
+  line-height: 35px;
+  padding-left: 50px;
+  display: flex;
+  padding: 15px 50px;
+}
+
+.filter-section-type {
+  border-right: 2px solid #fff;
+  margin-right: 20px;
+  padding-right: 25px;
+}
+
+.filter-content label {
+  color: white;
+  font-size: 18px;
+  line-height: 50px;
+  padding: 3px;
+  position: relative;
+  bottom: 4px;
+}
+
+.filter-content input {
+  height: 20px;
+  width: 20px;
+  outline: none;
+  border: white;
+  border-radius: 46px;
+}
