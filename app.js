@@ -4,6 +4,12 @@ const items = [
         description: "Thai Yellow Curry Noodles with Shiitake Mushrooms",
         nationality: "THAI",
         itemImage: "recipe1.png"
+    },
+    {
+        date: "17 March 2016",
+        description: "Cappellini with Cherry Tomatoes and Fresh Basil",
+        nationality: "ITALIAN",
+        itemImage: "recipe2.png"
     }
 ]
 
@@ -44,7 +50,11 @@ function delIt(eleId)
 }
 
 function showFilter() {
-
+    if (document.getElementsByClassName('filter-content')[0].style.display === "none") {
+        document.getElementsByClassName('filter-content')[0].style.display = "flex"
+    } else {
+        document.getElementsByClassName('filter-content')[0].style.display = "none"
+    }
 }
 
 init();

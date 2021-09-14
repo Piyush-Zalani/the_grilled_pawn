@@ -49,22 +49,40 @@
         </div>
         <div class="item-content">
             <h1>Our Recipes</h1>
-            <button class="filter-button" onclick="showFilter()">Filer recipes by</button>
-            <div class="sort">
-                <label>Sort by</label>
-                <select name="cars" id="cars">
-                    <option value="new">Newest first</option>
-                    <option value="old">Oldest first</option>
-                </select>
-            </div>
-            <div class="searchbox">
-                <input type="text" name="name" placeholder="Search recipe"/>
+            <div class="options">
+                <button class="filter-button" onclick="showFilter()">Filer recipes by</button>
+                <div class="sort">
+                    <label>Sort by</label>
+                    <select name="cars" id="cars">
+                        <option value="new">Newest first</option>
+                        <option value="old">Oldest first</option>
+                    </select>
+                </div>
+                <div class="searchbox">
+                    <input type="text" name="name" placeholder="Search recipe"/>
+                </div>
             </div>
             <div class="filter-content">
                 <div class="filter-section-type">
                     <h2>Food type:</h2>
-                    <input type="checkbox" />
-                    <label>Appetisers</label>
+                    <div>
+                        <div>
+                            <input type="checkbox" />
+                            <label>Appetisers</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" />
+                            <label>Mains</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" />
+                            <label>Desserts</label>
+                        </div>
+                        <div>
+                            <input type="checkbox" />
+                            <label>Special occasions</label>
+                        </div>
+                    </div>
                 </div>
                 <div class="filter-section">
                     <h2>Nationality:</h2>

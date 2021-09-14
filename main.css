@@ -224,7 +224,6 @@ body{
     opacity: .1;
     line-height: 0;
     -webkit-text-stroke: 1px #000;
-    -webkit-user-select: none;
 }
 
 .cards{
@@ -409,7 +408,6 @@ input {
   color: white;
   font-size: 18px;
   line-height: 35px;
-  padding-left: 50px;
   display: flex;
   padding: 15px 50px;
 }
@@ -435,4 +433,8 @@ input {
   outline: none;
   border: white;
   border-radius: 46px;
+}
+
+.cards {
+  margin-top: 35px;
 }
